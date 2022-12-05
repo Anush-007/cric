@@ -1,0 +1,37 @@
+* {
+	--first_color: #0368a0;
+	--second_color: #4b9fce;
+	--h: 200px;
+	--w: 500px;
+}
+
+p.time {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	text-align: left;
+	size: 1.5em;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.card {
+	height: var(--h);
+	width: var(--w);
+	background-image: linear-gradient(
+		to right,
+		var(--first_color),
+		var(--second_color)
+	);
+}
+
+.body > span {
+	font-size: 1.5em;
+}
+
+.body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
