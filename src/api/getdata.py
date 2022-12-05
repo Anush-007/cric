@@ -6,7 +6,8 @@ import json
 # Read the data at the posts reference (this is a blocking operation)
 def listener(event):
     with open("data.json", "w") as outfile:
-        json.dump(event.data, outfile)
+        data = ref.get()
+        json.dump(data, outfile)
         print("Data written to file")
     return event.data
 
@@ -29,12 +30,14 @@ def fetch_data():
 
     cred = credentials.Certificate(cred)
     firebase_admin.initialize_app(cred, {'databaseURL': url})
+    global ref 
     ref = db.reference("")
     data = ref.get()
     with open("data.json", "w") as outfile:
         json.dump(data, outfile)
 
     data = ref.listen(listener)
+    return data
 
 
 while True:
