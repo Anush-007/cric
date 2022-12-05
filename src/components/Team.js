@@ -1,11 +1,12 @@
 import React from 'react';
+import './Team.css';
 
 function Team({ img, name }) {
 	return (
-		<>
-			<img src='img' alt={name} />
+		<div className='team'>
+			<img src={img} alt={name} />
 			<span>{name}</span>
-		</>
+		</div>
 	);
 }
 
