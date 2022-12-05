@@ -5,6 +5,9 @@ function MatchScheduleCard({ time }) {
 	return (
 		<div className='card'>
 			<p className='time'>{time}</p>
+			<div className='body'>
+				<span>Vs</span>
+			</div>
 		</div>
 	);
 }
