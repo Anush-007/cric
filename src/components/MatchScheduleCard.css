@@ -1,8 +1,8 @@
 * {
 	--first_color: #0368a0;
 	--second_color: #4b9fce;
-	--h: 200px;
-	--w: 500px;
+	--h: 20vh;
+	--w: 100%;
 }
 
 p.time {
@@ -27,6 +27,7 @@ p.time {
 
 .body > span {
 	font-size: 1.5em;
+	padding-left: 10px;
 }
 
 .body {

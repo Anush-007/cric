@@ -1,0 +1,27 @@
+* {
+	--first_color: #0368a0;
+	--second_color: #4b9fce;
+}
+
+.head {
+	background-image: linear-gradient(
+		to right,
+		var(--first_color),
+		var(--second_color)
+	);
+}
+
+.row {
+	width: 100%;
+}
+
+th,
+tr {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+td {
+	padding: 0 10px;
+}
