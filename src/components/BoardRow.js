@@ -4,11 +4,11 @@ import './BoardRow.css';
 function BoardRow({ rank, teamName, points, isHead }) {
 	if (isHead) {
 		return (
-			<th className='row head'>
-				<td>Sr.</td>
-				<td>Team</td>
-				<td>Points</td>
-			</th>
+			<tr className='row head'>
+				<th>Sr.</th>
+				<th>Team</th>
+				<th>Points</th>
+			</tr>
 		);
 	}
 	return (

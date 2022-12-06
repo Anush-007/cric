@@ -13,11 +13,11 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<MatchScheduleCard
+				{/* <MatchScheduleCard
 					time='15:00'
 					teams={teams}
-				></MatchScheduleCard>
-				{/* <LeaderBoard /> */}
+				></MatchScheduleCard> */}
+				<LeaderBoard />
 			</header>
 		</div>
 	);
